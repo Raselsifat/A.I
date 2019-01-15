@@ -1,0 +1,18 @@
+?- animal(mammal,A,_,_).
+A = tiger ;
+A = hyena ;
+A = lion ;
+A = zebra.
+
+?- animal(mammal,A,carnivore,_).
+A = tiger ;
+A = hyena ;
+A = lion ;
+false.
+
+?- animal(mammal,A,_,stripes).
+A = tiger ;
+A = zebra.
+
+?- animal(reptile,A,_,mane).
+false.
